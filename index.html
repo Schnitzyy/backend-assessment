@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Items</title>
+</head>
+<body>
+    <h1>Purchase Items Management</h1>
+    <h2>Create New Purchase Item</h2>
+
+    <form id="create-form">
+        <label for="itemName">Item Name:</label>
+        <input type="text" id="itemName" required>
+        <label for="description">Description:</label>
+        <input type="text" id="description" required>
+        <label for="vendors">Vendors (comma-separated):</label>
+        <input type="text" id="vendors" required>
+        <label for="price">Respective price (comma-separated):</label>
+        <input type="text" id="price" required>
+        
+        <button type="submit" onclick="addItem(event)">Create Item</button>
+    </form>
+
+    <div id="pagination-info"></div>
+    <div id="pagination-controls"></div>
+
+    <h2>Existing Items</h2>
+    <div id="item-list">
+    </div>
+    <div id="analytics"></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
